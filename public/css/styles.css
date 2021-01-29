@@ -80,6 +80,7 @@ header div.top-header p{
 
 .fa-search {
     text-align: center;
+    padding-top: 8px;
 }
 
 div.form {
@@ -87,6 +88,7 @@ div.form {
     width: 50%;
     height: 34px;
     margin-top: 13px;
+    margin-left: 50px;
 }
 
 div.burger-menu{
@@ -193,7 +195,7 @@ footer article div {
 
 @media (min-width: 361px) {
     .burger-menu {
-        display: none;
+        display: block;
     }
 
     .description {
@@ -202,8 +204,9 @@ footer article div {
     }
 
     header nav {
-        display: block;
+        display: none; 
     }
+
 
     main section article {
         box-shadow: 0px 0px 10px rgb(100 ,100 ,100 );
@@ -245,10 +248,76 @@ footer article div {
 
 }
 
+/*MEDIA QUERY PARA EL HEADER PORQ SINO EN 361PX QUEDABA MUY AMONTONADO*/
+@media (min-width: 549px){
+    
+    .burger-menu {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    header nav ul {
+        display: flex;
+        padding-bottom: 8px;
+        margin-left: 3px;
+    }
+
+    header nav ul li {
+        margin-right: 9px;
+    }
+
+
 @media (min-width: 769px){
     
+    div.top-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div.resp-header {
+        width: 153%;
+    }
+
+    div.logo {
+
+    }
+
+    div.form {
+        margin-left: 5px;
+    }
+
+    header div.top-header p {
+        padding-top: 12px;
+    }
+
+    header .form .input {
+        margin-right: 7px;
+        margin-top: 4px;
+        border-radius: 0;
+        width: 91%;
+        height: 27px;
+        border: 1px solid black;
+    }
+
+    header .form .submit {
+        margin-right: 7px;
+        margin-top: 4px;
+        border-radius: 0;
+        height: 27px;
+        border: 1px solid black;
+    }
+
+    .fa-search {
+        padding: 5px 2px;
+    }
+
     header nav {
-        display: block;
+        display: flex;
+        justify-content: space-between;
     }
 
     main section article {
@@ -264,7 +333,72 @@ footer article div {
     main section article {
         width: 22%;
     } 
-
-    
+ 
 }
 
+@media (min-width: 1024px){
+    div.resp-header {
+        width: 183%;
+    }
+
+    header div.top-header p {
+        font-size: 16px;
+    }
+
+    header nav {
+        padding: 0px 16px;
+    }
+
+    header nav ul li a {
+        font-size: 17px;
+        margin-right: 9px;
+    }
+}
+
+@media (min-width: 1280px) {
+    div.resp-header {
+        width: 230%;
+    }
+
+    header div.top-header p {
+        font-size: 20px;
+    }
+
+    header nav {
+        padding: 0px 35px;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+        margin-right: 19px;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    div.form{
+        margin-top: 60px;
+    }
+
+    header .form .submit {
+        width: 5%;
+    }
+
+    header div.top-header p {
+        margin-top: 43px;
+        font-size: 30px;
+    }
+
+    .fa-search {
+        padding: 5px 7px;
+    }
+
+    header nav {
+        padding: 0px 50px;
+    }
+
+    header nav ul li a {
+        font-size: 25spx;
+        margin-right: 33px;
+    }
+}
