@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    padding: 5%;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+
+header nav{
+    font-size: 12px;
+    display: none;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    border-radius: 8px 0 0 8px;
+    line-height: 1em;
+    font-size: 12px;
+}
+header .form .submit{
+    background-color: #FFF;
+    color: #666;
+    width: 10%;
+    border-radius: 0 8px 8px 0;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.resp-header {
+    display: flex;
+    align-content: space-between;
+}
+
+.fa-search {
+    text-align: center;
+    padding-top: 8px;
+}
+
+div.form {
+    display: flex;
+    width: 50%;
+    height: 34px;
+    margin-top: 13px;
+    margin-left: 50px;
+}
+
+
+
+/*ESTILOS FOOTER*/
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+i.fa-credit-card, i.fa-gift, i.fa-user-shield {
+    color: #1259c3;
+    font-size: 2em;
+}
+
+footer article {
+    margin: 40px 0;
+    color: #666;
+}
+
+footer article div {
+    margin-bottom: 9px;
+}
