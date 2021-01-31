@@ -9,6 +9,11 @@ body {
     background-color: #ebebeb;
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
 h3{
     font-size: 24px;
 }
@@ -87,6 +92,49 @@ div.form {
     margin-left: 50px;
 }
 
+.main-login {
+    display: block;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 15px;
+}
+
+/* ESTILOS FORMULARIO*/
+
+div.main-login {
+    padding: 40px;
+}
+
+.main-login form p {
+    text-align: center;
+    padding: 5px;
+}
+
+div.main-login button {
+    background-color: #1259c3;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+div.main-login form p input {
+    height: 30px;
+}
+
+.fa-unlock, .fa-user {
+    font-size: 20px;
+}
 
 
 /*ESTILOS FOOTER*/
