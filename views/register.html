@@ -44,49 +44,54 @@
             </ul>
         </nav>
 
+        <div class="burger-menu">
+            <i class="fa fa-bars"></i>
+        </div>
+
     </header>
 
     <main>
 
-        <form action="/register" method="POST">
+        <h1>Crea tu cuenta</h1>
+        <form class="form-inicio" action="/register" method="POST">
             <div class="nombre">
-                <label for="nombre">Nombre y Apellido:</label>
-                <input type="text" name="usuario" id="nombre" required>
+                <label for="nombre"><i class="fas fa-address-card"></i></label>
+                <input class="agrandar" type="text" name="usuario" id="nombre" placeholder="Nombre y Apellido" required>
                 <br>
                 <br>
             </div>    
 
             <div class="usuario">
-                <label for="usuario">Nombre de Usuario:</label>
-                <input type="text" name="usuario" id="usuario" required>
+                <label for="usuario"><i class="fas fa-user"></i></label>
+                <input class="agrandar" type="text" name="usuario" id="usuario" placeholder="Ingerese su Usuario" required>
                 <br>
                 <br>
             </div>    
 
             <div class="email">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" required>
+                <label for="email"><i class="fas fa-envelope"></i></label>
+                <input class="agrandar" type="email" name="email" id="email" placeholder="Ingrese su Email" required>
                 <br>
                 <br>
             </div>    
 
             <div class="telefono">
-                <label for="telefono">Telefono:</label>
-                <input type="tel" name="telefono" id="telefono">
+                <label for="telefono"><i class="fas fa-phone-alt"></i></label>
+                <input class="agrandar" type="tel" name="telefono" placeholder="Ingrese su Telefono" id="telefono">
                 <br>
                 <br>
             </div>    
 
             <div class="fecha">
-                <label for="edad">Fecha de nacimiento</label>
-                <input type="date" name="fecha" id="fecha" required>
+                <label for="edad"><i class="far fa-calendar-alt"></i></label>
+                <input class="agrandar" type="date" name="fecha" id="fecha" required>
                 <br>
                 <br>
             </div>    
 
             <div class="domicilio">
-                <label for="domicilio">Domicilio:</label>
-                <input type="text" name="domicilio" id="domicilio">
+                <label for="domicilio"><i class="fas fa-map-marker-alt"></i></label>
+                <input class="agrandar" type="text" name="domicilio" placeholder="Ingrese su Domicilio" id="domicilio">
                 <br>
                 <br>
             </div>
@@ -127,23 +132,22 @@
 
             <div class="foto">
                 <label 
-                    for="foto-perfil">Ingrese una Imagen para su perfil
-                </label>
+                    for="foto-perfil"><i class="fas fa-image"></i></label>
                 <input type="file" name="avatar" accept=".jpg, .png" multiple>
                 <br>
                 <br>
             </div>
 
             <div class="password">
-                <label for="password">Contraseña:</label>
-                <input type="password" name="clave" id="clave" required>
+                <label for="password"><i class="fas fa-lock"></i></label>
+                <input class="agrandar" type="password" name="clave" id="clave" placeholder="Ingrese su Contraseña" required>
                 <br>
                 <br>
             </div>
 
             <div class="password">
-                <label for="password">Confirmar contraseña:</label>
-                <input type="password" name="clave" id="clave" required>
+                <label for="password"><i class="fas fa-lock"></i></label>
+                <input class="agrandar" type="password" name="clave" id="clave" placeholder="Verifique su Contraseña" required>
                 <br>
                 <br>
             </div>

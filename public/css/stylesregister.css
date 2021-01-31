@@ -87,6 +87,54 @@ div.form {
     margin-left: 50px;
 }
 
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 15px;
+}
+
+/*ESTILOS FORMULARIO*/ 
+
+form.form-inicio {
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+form div input.agrandar {
+    height: 30px;
+}
+
+.fas, .far {
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+div.perfil-usuario, div.categorias {
+    padding: 7px;
+}
+
+
+
+
+form.form-inicio button {
+    background-color: #1259c3;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 7px;
+    font-size: 16px;
+}
 
 
 /*ESTILOS FOOTER*/
