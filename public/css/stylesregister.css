@@ -100,7 +100,14 @@ div.burger-menu i{
     padding: 15px;
 }
 
-/*ESTILOS FORMULARIO*/ 
+/*----------ESTILOS FORMULARIO-----------*/ 
+
+main {
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+    background-color: #ffffff;
+    margin: 20px 19px;
+}
+
 
 form.form-inicio {
     text-align: center;
@@ -125,15 +132,13 @@ div.perfil-usuario, div.categorias {
     padding: 7px;
 }
 
-
-
-
 form.form-inicio button {
     background-color: #1259c3;
     color: #ffffff;
     padding: 6px 14px;
     border-radius: 7px;
     font-size: 16px;
+    border: none;
 }
 
 
@@ -158,4 +163,183 @@ footer article {
 
 footer article div {
     margin-bottom: 9px;
+}
+
+@media (min-width: 361px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .description {
+        display: block;
+        margin-top: 30px;
+    }
+
+    header nav {
+        display: none; 
+    }
+}
+
+/*MEDIA QUERY PARA EL HEADER PORQ SINO EN 361PX QUEDABA MUY AMONTONADO*/
+@media (min-width: 549px){
+    
+    .burger-menu {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    header nav ul {
+        display: flex;
+        padding-bottom: 8px;
+        margin-left: 3px;
+    }
+
+    header nav ul li {
+        margin-right: 9px;
+    }
+
+    main {
+        margin: 19px 27px;
+    }
+}
+
+@media (min-width: 769px){
+    
+    div.top-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div.resp-header {
+        width: 153%;
+    }
+
+    div.form {
+        margin-left: 5px;
+    }
+
+    header div.top-header p {
+        padding-top: 12px;
+    }
+
+    header .form .input {
+        margin-right: 7px;
+        margin-top: 4px;
+        border-radius: 0;
+        width: 91%;
+        height: 27px;
+        border: 1px solid black;
+    }
+
+    header .form .submit {
+        margin-right: 7px;
+        margin-top: 4px;
+        border-radius: 0;
+        height: 27px;
+        border: 1px solid black;
+    }
+
+    .fa-search {
+        padding: 5px 2px;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main {
+        margin: 19px 38px;
+    }
+    
+    form div input.agrandar {
+        width: 50%;
+    }
+
+    div.perfil-usuario, div.categorias {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 1024px){
+    div.resp-header {
+        width: 183%;
+    }
+
+    header div.top-header p {
+        font-size: 16px;
+    }
+
+    header nav {
+        padding: 0px 16px;
+    }
+
+    header nav ul li a {
+        font-size: 17px;
+        margin-right: 9px;
+    }
+
+    main {
+        margin: 30px 52px;
+    }
+}
+
+@media (min-width: 1280px) {
+    div.resp-header {
+        width: 230%;
+    }
+
+    header div.top-header p {
+        font-size: 20px;
+    }
+
+    header nav {
+        padding: 0px 35px;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+        margin-right: 19px;
+    }
+
+    main {
+        margin: 41px 64px;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    div.form{
+        margin-top: 60px;
+    }
+
+    header .form .submit {
+        width: 5%;
+    }
+
+    header div.top-header p {
+        margin-top: 43px;
+        font-size: 30px;
+    }
+
+    .fa-search {
+        padding: 5px 7px;
+    }
+
+    header nav {
+        padding: 0px 50px;
+    }
+
+    header nav ul li a {
+        font-size: 25spx;
+        margin-right: 33px;
+    }
+
+    main {
+        margin: 45px 95px;
+    }
 }
