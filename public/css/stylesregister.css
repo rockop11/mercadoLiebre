@@ -286,6 +286,21 @@ footer article div {
     main {
         margin: 30px 52px;
     }
+
+     /* ESTILOS FOOTER RESPONSICE */
+
+     .cont-footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cont-footer article {
+        width: 27%;
+    }
+
+    footer article div i:hover {
+        color: #5297ff;
+    }
 }
 
 @media (min-width: 1280px) {

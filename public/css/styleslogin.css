@@ -125,12 +125,16 @@ div.main-login {
 }
 
 div.main-login button {
-    background-color: #1259c3;
+    background-color: #0d5fdb;
     color: #ffffff;
     padding: 6px 14px;
     border-radius: 7px;
     font-size: 16px;
     border: none;
+}
+
+div.main-login button:hover {
+    background-color: #001463;
 }
 
 div.main-login form p input {
@@ -193,14 +197,22 @@ footer article div {
         justify-content: space-between; 
     }
 
+    header .form .input {
+        line-height: 2em;
+    }
+
     header nav ul {
         display: flex;
         padding-bottom: 8px;
-        margin-left: 3px;
+        margin: 5px;
     }
 
     header nav ul li {
         margin-right: 9px;
+    }
+
+    header div.top-header p {
+        font-size: 17px;
     }
 }
 
@@ -221,6 +233,7 @@ footer article div {
 
     header div.top-header p {
         padding-top: 12px;
+        font-size: 15px;
     }
 
     header .form .input {
@@ -248,9 +261,17 @@ footer article div {
         display: flex;
         justify-content: space-between;
     }
+
+    div.main-login {
+        margin: 40px 130px;
+    }
     
     div.main-login form p input {
         width: 50%;
+    }
+
+    header ul li a {
+        font-size: 14px;
     }
 }
 
@@ -270,6 +291,21 @@ footer article div {
     header nav ul li a {
         font-size: 17px;
         margin-right: 9px;
+    }
+
+    /* ESTILOS FOOTER RESPONSICE */
+
+    .cont-footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cont-footer article {
+        width: 27%;
+    }
+
+    footer article div i:hover {
+        color: #5297ff;
     }
 }
 
