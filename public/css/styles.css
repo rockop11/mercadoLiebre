@@ -2,12 +2,12 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
 /* -------------BODY--------------------- */
 body{
-    font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
 }
   
@@ -31,9 +31,6 @@ header{
 
 header div.logo{
     width: 50%;
-}
-
-header div.logo{
     padding: 10px;
 }
 
@@ -76,8 +73,9 @@ div.form {
 
 div.input {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
+
 div.input input {
     border: none;
     width: 90%;
@@ -86,6 +84,11 @@ div.input input {
 div.input button {
     border: none;
     background-color: #ffffff;
+    cursor: pointer;
+}
+
+div.lupa i {
+    font-size: 17px;
 }
 
 div.burger-menu{
@@ -172,6 +175,7 @@ main section article i,
 
 
 /* -------- ESTILOS DEL FOOTER -----------*/
+
 footer {
     background-color: #ffffff;
     text-align: center;
@@ -196,7 +200,7 @@ footer article div {
 }
 
 
-/*------ MEDIA-QUERYS --------- */
+/*-------- MEDIA-QUERYS --------- */
 
 @media (min-width: 361px) {
     .burger-menu {
@@ -212,6 +216,7 @@ footer article div {
         display: none; 
     }
 
+    /*Articulos*/
     main section article {
         /*box-shadow: 0px 0px 10px rgb(100 ,100 ,100 );*/
         width: 45%;
@@ -239,7 +244,7 @@ footer article div {
 }
 
 @media (min-width: 769px){
-    
+    /*Header*/
     div.top-header {
         display: flex;
         justify-content: space-between;
@@ -285,6 +290,7 @@ footer article div {
         display: none;
     }
 
+    /*Articulos*/
     main section article:hover {
         box-shadow: 0px 0px 10px rgb(100 ,100 ,100 );
     }
@@ -302,13 +308,14 @@ footer article div {
 }
 
 @media (min-width: 1024px){
+    /*Header*/
     div.resp-header {
         width: 183%;
     }
 
     header div.top-header p {
         margin-top: 25px;
-        font-size: 16px;
+        font-size: 19px;
     }
 
     header nav {
@@ -319,7 +326,7 @@ footer article div {
         font-size: 17px;
         margin-right: 9px;
     }
-
+    /*Articulos*/
     main {
         padding: 30px 0;
     }
@@ -343,7 +350,7 @@ footer article div {
     }
 
 
-    /* ESTILOS FOOTER RESPONSICE */
+    /* ESTILOS FOOTER RESPONSIVE */
 
     .cont-footer {
         display: flex;
@@ -357,13 +364,10 @@ footer article div {
     footer article div i:hover {
         color: #5297ff;
     }
-
-    /*article div.main-article:hover {
-        
-    }*/
 }
 
 @media (min-width: 1280px) {
+    /*Header*/
     div.resp-header {
         width: 230%;
     }
@@ -382,27 +386,19 @@ footer article div {
     }
 
     header .form .input {
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 
-@media (min-width: 1920px) {
-
-    div.form{
-        margin-top: 60px;
-    }
+@media (min-width: 1440px) {
 
     header .form .submit {
         width: 5%;
     }
 
     header div.top-header p {
-        margin-top: 43px;
+        margin-top: 36px;
         font-size: 30px;
-    }
-
-    .fa-search {
-        padding: 5px 7px;
     }
 
     header nav {
@@ -412,5 +408,17 @@ footer article div {
     header nav ul li a {
         font-size: 25spx;
         margin-right: 33px;
+    }
+
+    div.input input {
+        font-size: 30px;
+    }
+
+    .fa-search {
+        font-size: 30px;
+    }
+
+    .fa-search:before {
+        font-size: 30px;
     }
 }

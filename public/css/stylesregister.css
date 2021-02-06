@@ -1,3 +1,4 @@
+/*Estilos Generales*/
 * {
     padding: 0;
     margin: 0;
@@ -5,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/* -------------BODY--------------------- */
 body {
     background-color: #ebebeb;
 }
@@ -17,6 +19,8 @@ p{
     font-size: 12px;
 }
 
+/* ------ESTILOS HEADER------*/
+
 div.top-header{
     padding: 5%;
 }
@@ -27,9 +31,6 @@ header{
 
 header div.logo{
     width: 50%;
-}
-
-header div.logo{
     padding: 10px;
 }
 
@@ -42,49 +43,52 @@ header ul li{
     list-style-type: none;
 }
 
-header ul li a{
+header nav ul li a{
     text-decoration: none;
     color: #000;
-}
-
-header .form .input{
-    background-color: #FFF;
-    outline: none;
-    color: #666;
-    padding: 2px;
-    border-radius: 8px 0 0 8px;
-    line-height: 1em;
-    font-size: 12px;
-}
-header .form .submit{
-    background-color: #FFF;
-    color: #666;
-    width: 10%;
-    border-radius: 0 8px 8px 0;
 }
 
 header div.top-header p{
     width: 100%;
     text-align: center;
     margin-top: 10px;
+    font-size: 15px;
 }
 
 .resp-header {
     display: flex;
-    align-content: space-between;
-}
-
-.fa-search {
-    text-align: center;
-    padding-top: 8px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 div.form {
     display: flex;
-    width: 50%;
-    height: 34px;
-    margin-top: 13px;
-    margin-left: 50px;
+    justify-content: space-between;
+    padding: 10px 5px;
+    width: 49%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #666;
+}
+
+div.input {
+    display: flex;
+    width: 100%;
+}
+
+div.input input {
+    border: none;
+    width: 90%;
+}
+
+div.input button {
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+div.lupa i {
+    font-size: 17px;
 }
 
 div.burger-menu{
@@ -99,6 +103,13 @@ div.burger-menu i{
     margin: 10px 0px 20px 0px;
     padding: 15px;
 }
+
+/*Color azul iconos header*/
+.fa-id-card, .fa-sign-in-alt, .fa-shopping-basket {
+    color: #0044AA;
+    font-size: ;
+}
+
 
 /*----------ESTILOS FORMULARIO-----------*/ 
 
@@ -117,23 +128,30 @@ form.form-inicio {
 h1 {
     text-align: center;
     padding: 20px;
+    color: #012964;
 }
 
 form div input.agrandar {
     height: 30px;
 }
 
-.fas, .far {
+main form.form-inicio .fas, main form.form-inicio .far {
     font-size: 20px;
     margin-right: 3px;
+    color: #012964;
 }
 
 div.perfil-usuario, div.categorias {
     padding: 7px;
 }
 
+label.estilos-label {
+    font-size: 20px;
+    color: #012964;
+}
+
 form.form-inicio button {
-    background-color: #1259c3;
+    background-color: #3582f5;
     color: #ffffff;
     padding: 6px 14px;
     border-radius: 7px;
@@ -141,12 +159,19 @@ form.form-inicio button {
     border: none;
 }
 
+form.form-inicio button:hover {
+    background-color: #001463;
+    cursor: pointer;
+}
 
-/*ESTILOS FOOTER*/
+
+
+/* -------- ESTILOS DEL FOOTER -----------*/
+
 footer {
     background-color: #ffffff;
     text-align: center;
-    padding: 50px 0;
+    padding: 30px 0;
     width: 90%;
     margin: 0 auto;
 }
@@ -154,6 +179,7 @@ footer {
 i.fa-credit-card, i.fa-gift, i.fa-user-shield {
     color: #1259c3;
     font-size: 2em;
+    cursor: pointer;
 }
 
 footer article {
@@ -165,14 +191,13 @@ footer article div {
     margin-bottom: 9px;
 }
 
+
+
+/*-------- MEDIA-QUERYS --------- */
+
 @media (min-width: 361px) {
     .burger-menu {
         display: block;
-    }
-
-    .description {
-        display: block;
-        margin-top: 30px;
     }
 
     header nav {
@@ -180,35 +205,8 @@ footer article div {
     }
 }
 
-/*MEDIA QUERY PARA EL HEADER PORQ SINO EN 361PX QUEDABA MUY AMONTONADO*/
-@media (min-width: 549px){
-    
-    .burger-menu {
-        display: none;
-    }
-
-    header nav {
-        display: flex;
-        justify-content: space-between; 
-    }
-
-    header nav ul {
-        display: flex;
-        padding-bottom: 8px;
-        margin-left: 3px;
-    }
-
-    header nav ul li {
-        margin-right: 9px;
-    }
-
-    main {
-        margin: 19px 27px;
-    }
-}
-
 @media (min-width: 769px){
-    
+    /*Header*/
     div.top-header {
         display: flex;
         justify-content: space-between;
@@ -222,34 +220,36 @@ footer article div {
         margin-left: 5px;
     }
 
+    header ul li a {
+        font-size: 15px;
+    }
+
     header div.top-header p {
         padding-top: 12px;
-    }
-
-    header .form .input {
-        margin-right: 7px;
-        margin-top: 4px;
-        border-radius: 0;
-        width: 91%;
-        height: 27px;
-        border: 1px solid black;
-    }
-
-    header .form .submit {
-        margin-right: 7px;
-        margin-top: 4px;
-        border-radius: 0;
-        height: 27px;
-        border: 1px solid black;
-    }
-
-    .fa-search {
-        padding: 5px 2px;
+        font-size: 16px;
     }
 
     header nav {
         display: flex;
         justify-content: space-between;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 15px;
+    }
+
+    header nav ul li a {
+        margin: 7px;
+    }
+
+    header nav ul li a i {
+        color: #0044AA;
+    }
+
+    .burger-menu {
+        display: none;
     }
 
     main {
@@ -271,7 +271,8 @@ footer article div {
     }
 
     header div.top-header p {
-        font-size: 16px;
+        margin-top: 25px;
+        font-size: 19px;
     }
 
     header nav {
@@ -304,6 +305,7 @@ footer article div {
 }
 
 @media (min-width: 1280px) {
+    /*Header*/
     div.resp-header {
         width: 230%;
     }
@@ -328,16 +330,12 @@ footer article div {
 
 @media (min-width: 1920px) {
 
-    div.form{
-        margin-top: 60px;
-    }
-
     header .form .submit {
         width: 5%;
     }
 
     header div.top-header p {
-        margin-top: 43px;
+        margin-top: 36px;
         font-size: 30px;
     }
 
@@ -356,5 +354,17 @@ footer article div {
 
     main {
         margin: 45px 95px;
+    }
+
+    div.input input {
+        font-size: 30px;
+    }
+
+    .fa-search {
+        font-size: 30px;
+    }
+
+    .fa-search:before {
+        font-size: 30px;
     }
 }
